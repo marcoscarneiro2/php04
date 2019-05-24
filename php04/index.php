@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
+  <?php
+if(isset($_GET["id"])){
+   echo $_GET["id"];
+}
+    
+    ?>
    <br><br><br><br><br><br><br><br>
     <form action="verificarlogin.php" method="post" class="container col-4" style="background:white;height:360px;width:400px;border-radius:20%">
     <br><br>
@@ -19,5 +26,6 @@
         <br>
         <input style="background-color:red" type="submit" value="entrar" class="btn btn-dark container col-2">
     </form>
+   
 </body>
 </html>
