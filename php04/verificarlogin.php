@@ -6,7 +6,7 @@ session_start();
 
 include_once 'conexao.php';
 
-$sql= "select * from usuarios where login='".$login."' and senha='".$senha."' ";
+$sql= "select * from usuario where login='".$login."' and senha='".$senha."' ";
 
 $result = mysqli_query($con,$sql);
 
